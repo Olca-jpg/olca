@@ -25,3 +25,5 @@ body, html {
             animation: text-bling 1s infinite;
 }
 
+@keyframes background-bling {
+    
