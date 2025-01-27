@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zvířátka</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 24px;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        .nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .item {
+            background-color: white;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .item h3 {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        .item p {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">Zvířátka</div>
+    
+    <div class="nav">
+        <a href="#">Domov</a>
+        <a href="#">Plazi</a>
+        <a href="#">O nás</a>
+    </div>
+
+    <div class="container">
+        <div class="item">
+            <h3>Papoušek</h3>
+            <img src="parrot.jpg" alt="Papoušek">
+            <p>Pták, který umí létat.</p>
+        </div>
+        <div class="item">
+            <h3>Sova</h3>
+            <img src="owl.jpg" alt="Sova">
+            <p>Sovy jsou noční dravci žijící po celém světě.</p>
+        </div>
+        <div class="item">
+            <h3>Křeček</h3>
+            <img src="hamster.jpg" alt="Křeček">
+            <p>Byl v Athénách.</p>
+        </div>
+        <div class="item">
+            <h3>Kobra</h3>
+            <img src="cobra.jpg" alt="Kobra">
+            <p>Nebezpečný had s jedovatým kousnutím.</p>
+        </div>
+        <div class="item">
+            <h3>Šimpanz</h3>
+            <img src="chimpanzee.jpg" alt="Šimpanz">
+            <p>Inteligentní primát žijící v džunglích.</p>
+        </div>
+        <div class="item">
+            <h3>Žralok Černý</h3>
+            <img src="shark.jpg" alt="Žralok">
+            <p>Velký predátor oceánů.</p>
+        </div>
+    </div>
+
+</body>
+</html>
+
