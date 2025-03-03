@@ -7,103 +7,99 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
         }
-        .header {
-            background-color: black;
+        header {
+            background-color: #4caf50;
             color: white;
             text-align: center;
-            padding: 15px 0;
-            font-size: 24px;
+            padding: 10px;
         }
-        .nav {
+        .navbar {
             display: flex;
             justify-content: center;
-            background-color: #333;
+            background-color: #4caf50;
+            padding: 10px 0;
         }
-        .nav a {
+        .navbar a {
             color: white;
-            padding: 14px 20px;
+            margin: 0 20px;
             text-decoration: none;
-            text-align: center;
+            font-size: 18px;
         }
-        .nav a:hover {
-            background-color: #575757;
+        .navbar a:hover {
+            text-decoration: underline;
         }
         .container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
             padding: 20px;
         }
-        .item {
-            background-color: white;
-            padding: 15px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        .animal {
             text-align: center;
-            border-radius: 10px;
+            margin-bottom: 40px;
         }
-        .item img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
+        .animal img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
         }
-        .item h3 {
-            margin-top: 10px;
-            font-size: 20px;
+        .animal h2 {
+            color: #4caf50;
         }
-        .item p {
-            font-size: 14px;
-            color: #555;
+        footer {
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
 
-    <div class="header">Zvířátka</div>
-    
-    <div class="nav">
-        <a href="#">Domov</a>
-        <a href="#">Plazi</a>
-        <a href="#">O nás</a>
+    <header>
+        <h1>Webová stránka o Zvířátkách</h1>
+    </header>
+
+    <div class="navbar">
+        <a href="#zvire1">Kočka</a>
+        <a href="#zvire2">Pes</a>
+        <a href="#zvire3">Králík</a>
     </div>
 
-    <div class="container">
-        <div class="item">
-            <h3>Papoušek</h3>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Macaw_Parrot.jpg" alt="Papoušek">
-            <p>Pták, který umí létat.</p>
-        </div>
-        <div class="item">
-            <h3>Sova</h3>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/BarnOwl23.jpg" alt="Sova">
-            <p>Sovy jsou noční dravci žijící po celém světě.</p>
-        </div> 
-        <div class="item">
-            <h3>Křeček</h3>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/African_Elephant_%28188286877%29.jpeg/1280px-African_Elephant_%28188286877%29.jpeg" alt="Křeček">
-            <p>Byl v Athénách.</p>
-        </div>
-        <div class="item">
-            <h3>Kobra</h3>
-            <img src="https://cdn.administrace.tv/2022/04/23/hd/0aaeb1dda5da7492de075276524dbd0b.jpg" alt="Kobra">
-            <p>Nebezpečný had s jedovatým kousnutím.</p>
-        </div>
-        <div class="item">
-            <h3>Šimpanz</h3>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Barn_Owl%2C_Lancashire.jpg" alt="Šimpanz">
-            <p>Inteligentní primát žijící v džunglích.</p>
-        </div>
-        <div class="item">
-            <h3>Žralok Černý</h3>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Spiders_Diversity.jpg" alt="Žralok Černý">
-            <p>Velký predátor oceánů.</p>
+    <div id="zvire1" class="container">
+        <div class="animal">
+            <img src="https://via.placeholder.com/300x200?text=Ko%C4%8Dka" alt="Kočka">
+            <h2>Kočka</h2>
+            <p>Kočky jsou známé svou nezávislostí a hravostí. Milují se schovávat na různých místech. Mnoho koček si rádo hraje s různými předměty, jako jsou balónky nebo papírové koule. Kočky mají výborný sluch a zrak, což jim pomáhá při lovu. Jsou také velmi čistotné a pečlivě se o sebe starají.</p>
         </div>
     </div>
+
+    <div id="zvire2" class="container">
+        <div class="animal">
+            <img src="https://via.placeholder.com/300x200?text=Pes" alt="Pes">
+            <h2>Pes</h2>
+            <p>Psi jsou nejlepšími přáteli člověka. Jsou věrní, loajální a rádi se s námi mazlí. Psi jsou skvělí společníci pro různé aktivity, jako je běhání nebo procházky. Každý pes má svou vlastní osobnost, od hravých až po klidné. Psi mají také velmi vyvinutý čich, který je využíván v různých profesionálních oblastech.</p>
+        </div>
+    </div>
+
+    <div id="zvire3" class="container">
+        <div class="animal">
+            <img src="https://via.placeholder.com/300x200?text=Kr%C3%A1l%C3%ADk" alt="Králík">
+            <h2>Králík</h2>
+            <p>Králíci jsou velmi roztomilí a hraví. Rádi se pohybují v kleci nebo po domě a často se schovávají do různých koutů. Králíci jsou vegetariáni a jejich strava se skládá především z trávy, zeleniny a sena. Mají velké uši, které jim pomáhají lépe slyšet. Králíci jsou také velmi čistotní a často si čistí srst.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Zvířátka Web</p>
+    </footer>
 
 </body>
 </html>
+
 
 
